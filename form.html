@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>register form</title>
+    <link rel="icon" type="image/x-icon" href="./lightbulb.avif.avif.avif" />
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: Dana;
+      font-size: 18px;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: lightgreen;
+      display: flex;
+      min-height: 100vh;
+      align-items: center;
+      justify-content: center;
+    }
+    .form {
+      box-sizing: border-box;
+      padding: 20px 28px;
+      width: 400px;
+      text-align: center;
+    }
+    .field {
+      border-radius: 10px;
+      background-color: white;
+      border: 3px solid #73ad21;
+      padding: 20px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      padding: 12px;
+      margin: 4px 2px;
+      width: 80%;
+      border-radius: 10px;
+      display: block;
+      margin: auto;
+      transition: 180ms ease-in border-color;
+    }
+    button {
+      background-color: #00bb8c;
+      border-radius: 10px;
+      padding: 12px;
+      margin: 4px 2px;
+      width: 80%;
+      border-radius: 10px;
+    }
+    .img {
+      width: 70px;
+      height: 70px;
+      margin: 20px;
+    }
+  </style>
+  <body>
+    <form action="" class="form">
+      <fieldset class="field">
+        <section class="inputs">
+          <br />
+          <img src="./lightbulb.avif.avif.avif" alt="logo" class="img" />
+          <div>
+            <input type="text" placeholder="نام کاربری " required autofocus />
+          </div>
+          <br />
+          <div>
+            <input type="email" placeholder="ایمیل" required />
+          </div>
+          <br />
+          <div>
+            <input
+              type="password"
+              placeholder="رمزعبور"
+              required
+              maxlength="10"
+            />
+          </div>
+          <br />
+          <div>
+            <input
+              type="password"
+              placeholder="تکرار رمزعبور"
+              required
+              maxlength="10"
+            />
+          </div>
+          <br />
+          <div>
+            <input type="checkbox" required id="accepted" />
+            <label for="accepted">
+              قوانین و شرایط <a href="#">سایت</a> را می پذیرم.
+            </label>
+          </div>
+          <br />
+          <div>
+            <button type="button">ثبت نام</button>
+          </div>
+        </section>
+      </fieldset>
+    </form>
+  </body>
+</html>
